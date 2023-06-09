@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Instagram Clone</h1>
+            <ul>
+                <li><a href="C:\Users\santu\Desktop">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="post-form">
+            <form action="/create-post" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <textarea name="caption" placeholder="Write a caption..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <section id="posts">
+            <div class="post">
+                <div class="post-header">
+                    <img src="user_avatar.jpg" alt="User Avatar">
+                    <h2>Username</h2>
+                </div>
+                <div class="post-image">
+                    <img src="post_image.jpg" alt="Post Image">
+                </div>
+                <div class="post-caption">
+                    <p>This is the caption for the post.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-button">Like</button>
+                    <button class="comment-button">Comment</button>
+                </div>
+                <div class="post-comments">
+                    <ul>
+                        <li>
+                            <span class="comment-user">Commenter:</span>
+                            <span class="comment-text">This is a comment.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post-add-comment">
+                    <input type="text" placeholder="Add a comment...">
+                    <button class="add-comment-button">Post</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+    </footer>
+</body>
+</html>
